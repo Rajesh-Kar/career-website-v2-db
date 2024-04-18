@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, jsonify
 
 app = Flask(__name__)
 
@@ -28,6 +28,11 @@ JOBS = [{
 @app.route('/')
 def helloworld():
   return render_template('home.html', jobs=JOBS)
+
+
+@app.route('/api/jobs')
+def list_jobs():
+  return jsonify(JOBS)
 
 
 if __name__ == '__main__':
