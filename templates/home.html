@@ -26,7 +26,7 @@
    <div class="col-md-6">
    
     <p class="lead">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et   dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      Step into a world of endless possibilities at our innovative career hub, where every individual's unique talents are celebrated and nurtured. With a kaleidoscope of opportunities spanning diverse industries, we offer more than just jobs; we provide platforms for personal growth and professional development. From seasoned experts to fresh graduates, our inclusive environment welcomes everyone to embark on a journey of exploration and discovery. Fuel your passion, unleash your creativity, and dare to dream big as you carve out your path towards success. Join a vibrant community of like-minded individuals driven by a shared vision of making a difference in the world. With flexible work arrangements, comprehensive benefits, and a supportive culture, we empower our team members to thrive both personally and professionally. Your adventure begins here—come be a part of something extraordinary.
     </p>
    </div>
     <div class="d-none d-md-block col-md-6">
@@ -35,10 +35,11 @@
  </div>
     <h2 class ="text-center mt-2 mb-4"> Job Open Positions</h2>
     <div>
-        {% for job in jobs %}
-           {% include 'jobitems.html'%}
-        {% endfor %}
+      {% for job in jobs %}
+          {% include 'jobitems.html'%}
+      {% endfor %}
     </div>
+    
     {% include 'footer.html' %}
     
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
