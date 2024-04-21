@@ -16,3 +16,8 @@ supabase_client = create_client(SUPABASE_URL, SUPABASE_KEY)
 def load_jobs_from_db():
   data = supabase_client.table("jobs").select("*").execute()
   return data
+
+
+def select_jobs_from_db(id):
+  data = supabase_client.table("jobs").select("*").eq("id", id).execute()
+  return data
